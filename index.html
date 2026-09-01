@@ -7,11 +7,31 @@
   <meta name="description" content="Join 50,000+ traders. High-accuracy Quotex signals delivered via Telegram.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- DATASET PIXEL TRACKING — ID: 1690066679402410 — Hidden / No Display -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1690066679402410');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" 
+         src="https://www.facebook.com/tr?id=1690066679402410&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- END DATASET PIXEL -->
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #fff; overflow-x: hidden; min-height: 100vh; }
     #bg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
-    
+
     .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; background: rgba(10,10,15,0.7); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center; }
     .nav-brand { display: flex; align-items: center; gap: 0.75rem; font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.25rem; color: #00f0ff; text-shadow: 0 0 20px rgba(0,240,255,0.5); }
     .nav-brand img { width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(0,240,255,0.3); object-fit: cover; }
@@ -20,7 +40,7 @@
     .nav-links a:hover { color: #00f0ff; }
     .nav-cta { background: linear-gradient(135deg, #00f0ff, #0066ff); color: #000; padding: 0.6rem 1.5rem; border-radius: 50px; font-weight: 700; font-size: 0.85rem; text-decoration: none; border: none; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; font-family: 'Orbitron', sans-serif; }
     .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,240,255,0.4); }
-    
+
     .hero { position: relative; z-index: 1; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 8rem 2rem 4rem; text-align: center; }
     .hero-content { max-width: 900px; }
     .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0,240,255,0.1); border: 1px solid rgba(0,240,255,0.2); padding: 0.5rem 1.25rem; border-radius: 50px; font-size: 0.85rem; color: #00f0ff; margin-bottom: 2rem; backdrop-filter: blur(10px); }
@@ -30,12 +50,12 @@
     .hero h1 span { display: block; font-size: 0.5em; font-weight: 400; color: rgba(255,255,255,0.6); -webkit-text-fill-color: rgba(255,255,255,0.6); margin-top: 0.5rem; }
     .hero p { font-size: 1.15rem; color: rgba(255,255,255,0.6); max-width: 600px; margin: 0 auto 2.5rem; line-height: 1.7; }
     .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    
+
     .btn-primary { background: linear-gradient(135deg, #00f0ff, #0066ff); color: #000; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 700; font-size: 1rem; text-decoration: none; border: none; cursor: pointer; transition: all 0.3s; font-family: 'Orbitron', sans-serif; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 0 40px rgba(0,240,255,0.3); }
     .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 50px rgba(0,240,255,0.5); }
     .btn-secondary { background: transparent; color: #fff; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; font-size: 1rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); cursor: pointer; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem; }
     .btn-secondary:hover { border-color: #00f0ff; color: #00f0ff; background: rgba(0,240,255,0.05); }
-    
+
     .features { position: relative; z-index: 1; padding: 6rem 2rem; }
     .section-title { text-align: center; font-family: 'Orbitron', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; margin-bottom: 1rem; background: linear-gradient(135deg, #fff, #00f0ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .section-subtitle { text-align: center; color: rgba(255,255,255,0.5); font-size: 1rem; margin-bottom: 4rem; }
@@ -46,12 +66,12 @@
     .feature-icon { width: 60px; height: 60px; background: linear-gradient(135deg, rgba(0,240,255,0.2), rgba(0,102,255,0.2)); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; border: 1px solid rgba(0,240,255,0.2); }
     .feature-card h3 { font-family: 'Orbitron', sans-serif; font-size: 1.2rem; margin-bottom: 0.75rem; color: #fff; }
     .feature-card p { color: rgba(255,255,255,0.5); font-size: 0.95rem; line-height: 1.6; }
-    
+
     .stats { position: relative; z-index: 1; padding: 4rem 2rem; background: rgba(0,0,0,0.3); }
     .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto; text-align: center; }
     .stat-item h3 { font-family: 'Orbitron', sans-serif; font-size: 2.5rem; font-weight: 900; color: #00f0ff; text-shadow: 0 0 30px rgba(0,240,255,0.5); }
     .stat-item p { color: rgba(255,255,255,0.5); font-size: 0.9rem; margin-top: 0.5rem; }
-    
+
     .testimonials { position: relative; z-index: 1; padding: 6rem 2rem; }
     .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
     .testimonial-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 2rem; backdrop-filter: blur(20px); position: relative; }
@@ -62,7 +82,7 @@
     .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #00f0ff, #0066ff); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: #000; }
     .testimonial-name { font-weight: 600; color: #fff; }
     .testimonial-role { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
-    
+
     .cta-section { position: relative; z-index: 1; padding: 6rem 2rem; text-align: center; }
     .cta-box { max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, rgba(0,240,255,0.05), rgba(0,102,255,0.05)); border: 1px solid rgba(0,240,255,0.15); border-radius: 32px; padding: 4rem 2rem; backdrop-filter: blur(20px); position: relative; overflow: hidden; }
     .cta-box::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(0,240,255,0.1) 0%, transparent 70%); animation: rotate 20s linear infinite; }
@@ -71,19 +91,19 @@
     .cta-box h2 { font-family: 'Orbitron', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 1rem; background: linear-gradient(135deg, #fff, #00f0ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .cta-box p { color: rgba(255,255,255,0.6); font-size: 1.1rem; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
     .dataset-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0,240,255,0.08); border: 1px dashed rgba(0,240,255,0.3); padding: 0.75rem 1.5rem; border-radius: 12px; font-family: 'Orbitron', sans-serif; font-size: 0.85rem; color: #00f0ff; margin-top: 1.5rem; letter-spacing: 1px; }
-    
+
     .footer { position: relative; z-index: 1; padding: 3rem 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: rgba(255,255,255,0.3); font-size: 0.85rem; }
     .footer-brand { font-family: 'Orbitron', sans-serif; font-weight: 700; color: #00f0ff; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
     .footer-brand img { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; }
-    
+
     #click-protection { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; background: rgba(0,0,0,0.95); display: none; align-items: center; justify-content: center; flex-direction: column; gap: 1rem; text-align: center; padding: 2rem; }
     #click-protection.active { display: flex; }
     #click-protection h3 { font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: #ff4444; }
     #click-protection p { color: rgba(255,255,255,0.6); max-width: 400px; }
-    
+
     .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
-    
+
     @media (max-width: 768px) {
       .nav { padding: 0.75rem 1rem; }
       .nav-links { display: none; }
@@ -116,7 +136,7 @@
     <li><a href="#testimonials">Reviews</a></li>
     <li><a href="#join">Join</a></li>
   </ul>
-  <a href="https://telegram.me/+RTruNG6lDqY4MDY0" class="nav-cta" target="_blank" onclick="return handleClick(event)">Join Channel</a>
+  <a href="https://telegram.me/+RTruNG6lDqY4MDY0" class="nav-cta" target="_blank" onclick="return trackAndGo(event,'NavJoin')">Join Channel</a>
 </nav>
 
 <section class="hero">
@@ -125,7 +145,7 @@
     <h1>ZORO TRADER<span>Master the Markets with Precision Signals</span></h1>
     <p>Join 50,000+ traders who trust Zoro Trader for high-accuracy Quotex signals, real-time market analysis, and expert trading strategies delivered straight to your Telegram.</p>
     <div class="hero-buttons">
-      <a href="https://telegram.me/+RTruNG6lDqY4MDY0" class="btn-primary" target="_blank" onclick="return handleClick(event)"><span>⚡</span> Join Telegram Channel</a>
+      <a href="https://telegram.me/+RTruNG6lDqY4MDY0" class="btn-primary" target="_blank" onclick="return trackAndGo(event,'HeroJoin')"><span>⚡</span> Join Telegram Channel</a>
       <a href="#features" class="btn-secondary"><span>📊</span> Explore Features</a>
     </div>
   </div>
@@ -170,7 +190,7 @@
   <div class="cta-box fade-in">
     <h2>Ready to Start Winning?</h2>
     <p>Join 50,000+ traders who are already profiting with Zoro Trader's premium Quotex signals. Your first winning trade is just one click away.</p>
-    <a href="https://telegram.me/+RTruNG6lDqY4MDY0" class="btn-primary" target="_blank" onclick="return handleClick(event)" style="font-size:1.1rem;padding:1.2rem 3rem;"><span>🚀</span> Join Zoro Trader Now</a>
+    <a href="https://telegram.me/+RTruNG6lDqY4MDY0" class="btn-primary" target="_blank" onclick="return trackAndGo(event,'CTAJoin')" style="font-size:1.1rem;padding:1.2rem 3rem;"><span>🚀</span> Join Zoro Trader Now</a>
     <div class="dataset-badge"><span>🔐</span> Dataset ID: 1690066679402410</div>
   </div>
 </section>
@@ -182,6 +202,52 @@
 </footer>
 
 <script>
+// ============================================
+// DATASET PIXEL EVENT TRACKING — ID: 1690066679402410
+// Invisible tracking — no visual elements
+// ============================================
+function trackEvent(eventName, params) {
+  if (typeof fbq !== 'undefined') {
+    fbq('track', eventName, params || {});
+  }
+  // Backup beacon in case pixel is blocked
+  try {
+    var img = new Image();
+    img.style.display = 'none';
+    img.src = 'https://www.facebook.com/tr?id=1690066679402410&ev=' + encodeURIComponent(eventName) + '&dl=' + encodeURIComponent(location.href) + '&ts=' + Date.now();
+    document.body.appendChild(img);
+  } catch(e) {}
+}
+
+function trackAndGo(e, label) {
+  var href = e.currentTarget.href;
+  trackEvent('Lead', { content_name: label, content_category: 'telegram_join' });
+  trackEvent('Contact', { content_name: label });
+  // Allow navigation after short delay for pixel to fire
+  setTimeout(function() {
+    window.open(href, '_blank');
+  }, 150);
+  e.preventDefault();
+  return false;
+}
+
+// Track scroll depth milestones
+var depthTracked = {25:false,50:false,75:false,100:false};
+window.addEventListener('scroll', function() {
+  var scrollPercent = Math.round((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100);
+  if (scrollPercent >= 25 && !depthTracked[25]) { depthTracked[25]=true; trackEvent('ViewContent',{content_name:'Scroll25'}); }
+  if (scrollPercent >= 50 && !depthTracked[50]) { depthTracked[50]=true; trackEvent('ViewContent',{content_name:'Scroll50'}); }
+  if (scrollPercent >= 75 && !depthTracked[75]) { depthTracked[75]=true; trackEvent('ViewContent',{content_name:'Scroll75'}); }
+  if (scrollPercent >= 95 && !depthTracked[100]) { depthTracked[100]=true; trackEvent('ViewContent',{content_name:'Scroll100'}); }
+});
+
+// Track time on page
+setTimeout(function(){ trackEvent('ViewContent',{content_name:'TimeOnPage_30s'}); }, 30000);
+setTimeout(function(){ trackEvent('ViewContent',{content_name:'TimeOnPage_60s'}); }, 60000);
+
+// ============================================
+// 3D BACKGROUND EFFECT
+// ============================================
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas.getContext('2d');
 let width, height, particles = [], mouseX = 0, mouseY = 0;
